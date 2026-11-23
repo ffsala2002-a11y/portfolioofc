@@ -1,0 +1,28 @@
+.section-project {
+    width: 100%;
+    padding: var(--padding);
+}
+
+.section-project_title {
+    text-align: center;
+    font-size: var(--size-sm);
+    color: var(--color-white);
+    margin-bottom: var(--space-md);
+}
+
+.section-project_list {
+    display: grid;
+    gap: var(--space-md);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.section-project_card {
+    overflow: hidden;
+    border: solid 2px;
+    border-radius: var(--radius-sm);
+}
+
+.section-project_image {
+    width: 100%;
+    object-fit: cover;
+}
