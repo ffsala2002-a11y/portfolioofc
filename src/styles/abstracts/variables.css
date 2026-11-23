@@ -1,0 +1,20 @@
+:root {
+
+    --color-background: #001833;
+    --color-background-navigation: #389fdbe8;
+    --color-background-pseudo: #b9096a;
+
+    --color-white: #ffff;
+
+    --space-sx: 0.5rem;
+    --space-md: 1rem;
+
+    --size-sm: 1.7rem;
+
+    --radius-circle: 50%;
+    --radius-sm: 20px;
+
+    --border: solid 2px  #b9096a;
+    --padding: 6rem 2rem;
+
+}

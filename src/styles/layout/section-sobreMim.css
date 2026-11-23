@@ -1,0 +1,24 @@
+.section {
+    min-width: 400px;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    padding: var(--padding);
+}
+
+.section_title {
+    font-size: var(--size-sm);
+    color: var(--color-white);
+    margin-bottom: var(--space-md);
+}
+
+.section_content {
+    padding: var(--space-sx);
+    border: var(--border);
+    border-radius: var(--radius-sm);
+    background-color: var(--color-background-navigation);
+}
+
+.section_description {
+    color: var(--color-white);
+}
