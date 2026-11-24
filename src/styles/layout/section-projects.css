@@ -22,7 +22,13 @@
     border: solid 2px;
     display: flex;
     flex-direction: column;
+    cursor: pointer;
     border-radius: var(--radius-sm);
+}
+
+.project_card:hover {
+    transform: scale(1.05);
+    transition: all 0.5s ease-in-out;
 }
 
 .card_image {
@@ -31,7 +37,14 @@
     object-fit: cover;
 }
 
+.card_image:hover {
+    transform: scale(1.05);
+    transition: all 0.5s ease-in-out;
+}
+
 .card_content {
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
     padding: var(--space-md);
 }
 
