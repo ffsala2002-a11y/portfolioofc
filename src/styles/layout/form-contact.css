@@ -1,8 +1,52 @@
+.section-contact {
+    padding: var(--padding);
+}
+
+.contact_title {
+    text-align: center;
+    font-size: var(--size-sm);
+    color: var(--color-white);
+    margin-bottom: var(--space-md);
+}
+
 .contact {
+    min-width: 400px;
+    max-width: 500px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
-    padding: var(--padding);
+    border-radius: var(--radius-sm);
+    gap: var(--space-md);
+    padding: var(--space-md);
+    background-color: var(--bg-quart);
+}
+
+.contact_group {
+    width: 100%;
+    outline: none;
+    padding: var(--space-sx);
+}
+
+.contact_input {
+    width: 100%;
+    outline: none;
+    padding: var(--space-sx);
+    border-radius: var(--radius-sm);
+    border: var(--border);
+    background-color: var(--bg-quint);
+}
+
+.contact_textarea {
+    width: 100%;
+    max-width: 100%;
+    min-height: 150px;
+    max-height: 200px;
+    resize: none;
+    outline: none;
+    padding: var(--space-sx);
+    border-radius: var(--radius-sm);
+    border: var(--border);
+    background-color: var(--bg-quint);
 }
