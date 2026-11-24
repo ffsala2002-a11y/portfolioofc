@@ -14,7 +14,7 @@ body {
     height: 100vh;
     overflow: hidden;
     overflow-y: auto;
-    background-color: var(--color-background);
+    background-color: var(--bg-prima);
 }
 
 body::-webkit-scrollbar {
@@ -24,12 +24,12 @@ body::-webkit-scrollbar {
 
 body::-webkit-scrollbar-thumb {
     border-radius: var(--radius-circle);
-    background-color: var(--color-background-pseudo);
+    background-color: var(--bg-terc);
 }
 
 body::-webkit-scrollbar-thumb:hover {
     cursor: pointer;
-    background-color: var(--color-background-navigation);
+    background-color: var(--bg-secun);
 }
 
 ul {

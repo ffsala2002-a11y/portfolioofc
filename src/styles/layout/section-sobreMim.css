@@ -16,7 +16,7 @@
     padding: var(--space-sx);
     border: var(--border);
     border-radius: var(--radius-sm);
-    background-color: var(--color-background-navigation);
+    background-color: var(--bg-secun);
 }
 
 .section-sobre_description {
