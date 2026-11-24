@@ -10,8 +10,21 @@
 .main_img-avatar {
     width: 200px;
     height: 200px;
+    animation: bounce 4.5s linear infinite;
     border: var(--border);
     border-radius: var(--radius-circle);
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0) scale(1);
+    }
+
+    50% {
+        transform: translateY(-12px) scale(1.05);
+    }
 }
 
 .main_title {

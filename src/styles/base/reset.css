@@ -12,7 +12,24 @@ html {
 body {
     width: 100vw;
     height: 100vh;
+    overflow: hidden;
+    overflow-y: auto;
     background-color: var(--color-background);
+}
+
+body::-webkit-scrollbar {
+    width: 8px;
+    background-color: rgba(241, 241, 241, 0.144);
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: var(--radius-circle);
+    background-color: var(--color-background-pseudo);
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    cursor: pointer;
+    background-color: var(--color-background-navigation);
 }
 
 ul {
