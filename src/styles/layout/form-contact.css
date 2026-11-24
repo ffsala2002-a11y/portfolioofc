@@ -32,9 +32,10 @@
 .contact_input {
     width: 100%;
     outline: none;
-    padding: var(--space-sx);
+    padding: var(--space-md);
     border-radius: var(--radius-sm);
     border: var(--border);
+    color: var(--color-white);
     background-color: var(--bg-quint);
 }
 
@@ -45,8 +46,26 @@
     max-height: 200px;
     resize: none;
     outline: none;
-    padding: var(--space-sx);
+    padding: var(--space-md);
     border-radius: var(--radius-sm);
     border: var(--border);
+    color: var(--color-white);
     background-color: var(--bg-quint);
+}
+
+.contact_button {
+    width: 100%;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    padding: var(--space-md);
+    border-radius: var(--radius-sm);
+    border: var(--border);
+    color: var(--color-white);
+    background-color: var(--bg-terc);
+}
+
+.contact_button:hover {
+    font-weight: bold;
+    transform: translateY(-2px) scale(1.02);
+    background-color: var(--bg-secun);
 }
