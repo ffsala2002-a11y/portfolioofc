@@ -3,6 +3,7 @@
     --bg-prima: #001833;
     --bg-secun: #389fdbe8;
     --bg-terc: #b9096a;
+    --bg-quart: rgba(0, 0, 0, 0.5);
 
     --color-white: #ffff;
 
@@ -14,7 +15,7 @@
     --radius-circle: 50%;
     --radius-sm: 20px;
 
-    --border: solid 2px  #b9096a;
+    --border: solid 2px #b9096a;
     --padding: 6rem 2rem;
 
 }

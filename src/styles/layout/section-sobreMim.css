@@ -1,4 +1,4 @@
-.section-sobre {
+.sobre {
     min-width: 400px;
     max-width: 600px;
     margin: 0 auto;
@@ -6,19 +6,19 @@
     padding: var(--padding);
 }
 
-.section-sobre_title {
+.sobre_title {
     font-size: var(--size-sm);
     color: var(--color-white);
     margin-bottom: var(--space-md);
 }
 
-.section-sobre_content {
+.sobre_content {
     padding: var(--space-sx);
     border: var(--border);
     border-radius: var(--radius-sm);
-    background-color: var(--bg-secun);
+    background-color: var(--bg-quart);
 }
 
-.section-sobre_description {
+.sobre_description {
     color: var(--color-white);
 }

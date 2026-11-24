@@ -43,7 +43,7 @@
 }
 
 .card_content {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: var(--bg-quart);
     backdrop-filter: blur(10px);
     padding: var(--space-md);
 }
