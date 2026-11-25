@@ -1,7 +1,7 @@
 .modalAlert {
     position: absolute;
     display: none;
-    bottom: var(--space-md);
+    bottom: var(--space-lg);
     border-radius: var(--radius-sx);
     padding: var(--space-md);
     background-color: var(--bg-quint);
@@ -18,7 +18,7 @@
 
 @keyframes movieModal {
     from {
-        bottom: 5rem;
+        bottom: 4rem;
         opacity: 0.1;
         transform: scale(0.5);
     }

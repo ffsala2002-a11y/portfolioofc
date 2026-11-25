@@ -25,12 +25,12 @@ body::-webkit-scrollbar {
 
 body::-webkit-scrollbar-thumb {
     border-radius: var(--radius-circle);
-    background-color: var(--bg-terc);
+    background-color: var(--bg-quart);
 }
 
 body::-webkit-scrollbar-thumb:hover {
     cursor: pointer;
-    background-color: var(--bg-secun);
+    background-color: var(--bg-terc);
 }
 
 ul {
@@ -39,4 +39,13 @@ ul {
 
 a {
     text-decoration: none;
+}
+
+input,
+textarea {
+    border: none;
+}
+
+textarea {
+    resize: none;
 }

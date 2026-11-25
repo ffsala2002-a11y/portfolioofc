@@ -36,12 +36,16 @@
 
 .contact_input {
     width: 100%;
-    outline: none;
+    font-size: 16px;
     padding: var(--space-md);
     border-radius: var(--radius-sm);
-    border: var(--border);
     color: var(--color-white);
     background-color: var(--bg-quint);
+}
+
+.contact_input:focus,
+.contact_textarea {
+    outline-offset: 2px;
 }
 
 .contact_textarea {
@@ -49,11 +53,9 @@
     max-width: 100%;
     min-height: 150px;
     max-height: 200px;
-    resize: none;
-    outline: none;
+    font-size: 16px;
     padding: var(--space-md);
     border-radius: var(--radius-sm);
-    border: var(--border);
     color: var(--color-white);
     background-color: var(--bg-quint);
 }
@@ -62,15 +64,15 @@
     width: 100%;
     cursor: pointer;
     transition: 0.3s ease-in-out;
+    font-weight: bold;
     padding: var(--space-md);
     border-radius: var(--radius-sm);
     border: var(--border);
-    color: var(--color-white);
+    color: var(--color-black);
     background-color: var(--bg-terc);
 }
 
 .contact_button:hover {
     font-weight: bold;
-    transform: translateY(-2px) scale(1.02);
-    background-color: var(--bg-secun);
+    transform: translateY(-2px) scale(1.05);
 }

@@ -1,15 +1,17 @@
 :root {
 
-    --bg-prima: #001833;
-    --bg-secun: #389fdbe8;
-    --bg-terc: #b9096a;
-    --bg-quart: rgba(0, 0, 0, 0.5);
-    --bg-quint: #000313;
+    --bg-prima: #000000;
+    --bg-secun: rgba(32, 31, 31, 0.878);
+    --bg-terc: #35e4f1;
+    --bg-quart: #35e4f12f;
+    --bg-quint: #0f0f0f;
 
     --color-white: #ffff;
+    --color-black: #000;
 
     --space-sx: 0.5rem;
     --space-md: 1rem;
+    --space-lg: 2rem;
 
     --size-sm: 1.7rem;
 
@@ -17,7 +19,7 @@
     --radius-sx: 10px;
     --radius-sm: 20px;
 
-    --border: solid 2px #b9096a;
+    --border: solid 2px #35e4f1;
     --padding: 6rem 2rem;
 
 }
