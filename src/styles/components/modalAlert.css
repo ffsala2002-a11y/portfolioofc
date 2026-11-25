@@ -1,0 +1,30 @@
+.modalAlert {
+    position: absolute;
+    display: none;
+    bottom: var(--space-md);
+    border-radius: var(--radius-sx);
+    padding: var(--space-md);
+    background-color: var(--bg-quint);
+}
+
+.modalAlert.active {
+    display: block;
+    animation: movieModal 0.6s ease;
+}
+
+.modalAlert_message {
+    color: var(--color-white);
+}
+
+@keyframes movieModal {
+    from {
+        bottom: 5rem;
+        opacity: 0.1;
+        transform: scale(0.5);
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}

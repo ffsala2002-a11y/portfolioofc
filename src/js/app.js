@@ -1,4 +1,5 @@
 import sendMessage from "./modules/whatsapp.js";
+import showAlert from "./modules/modalError.js";
 
 const input = document.getElementById('inputName');
 const textArea = document.getElementById('textMessage');
@@ -11,10 +12,10 @@ form.addEventListener('submit', (e) => {
     const valueTextArea = textArea.value.trim();
 
     if (!valueInput || !valueTextArea) {
-        alert("Vazio");
+        showAlert("warning");
 
         return;
-    }
+    };
 
     sendMessage(valueInput, valueTextArea)
 })
