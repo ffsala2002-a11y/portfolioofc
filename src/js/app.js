@@ -1,5 +1,6 @@
 import sendMessage from "./modules/whatsapp.js";
 import showAlert from "./modules/modalError.js";
+import { toggleMenu, closeMenu } from './modules/mobileMenu.js';
 
 const input = document.getElementById('inputName');
 const textArea = document.getElementById('textMessage');
@@ -18,4 +19,11 @@ form.addEventListener('submit', (e) => {
     };
 
     sendMessage(valueInput, valueTextArea)
-})
+});
+
+
+const menuButton = document.querySelector('.menu-button');
+const bgNavigation = document.getElementById('navigationBackground');
+
+menuButton.addEventListener('click', toggleMenu);
+bgNavigation.addEventListener('click', closeMenu);
