@@ -18,6 +18,10 @@ body {
     background-color: var(--bg-prima);
 }
 
+body.scroll-hidden {
+    overflow-y: hidden;
+}
+
 body::-webkit-scrollbar {
     width: 8px;
     background-color: rgba(241, 241, 241, 0.144);
