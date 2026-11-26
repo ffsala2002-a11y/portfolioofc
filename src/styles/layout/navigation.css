@@ -77,7 +77,8 @@
         transform: translateX(0);
     }
 
-    .menu-button, .btn-close {
+    .menu-button,
+    .btn-close {
         display: block;
     }
 

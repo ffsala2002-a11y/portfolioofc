@@ -13,7 +13,9 @@
 .project_list {
     display: grid;
     gap: var(--space-md);
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 0.9fr));
 }
 
 .project_card {
