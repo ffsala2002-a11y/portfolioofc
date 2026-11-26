@@ -12,16 +12,27 @@
     top: var(--space-md);
     left: var(--space-md);
     z-index: 2;
+    font-size: 1.5rem;
+    display: none;
     background-color: var(--bg-secun);
     border: none;
     color: var(--color-white);
-    font-size: 1.5rem;
-    cursor: pointer;
-    display: none;
 }
 
 .mnu-button.active {
     display: block;
+}
+
+.btn-close {
+    position: absolute;
+    top: var(--space-md);
+    right: var(--space-md);
+    padding: var(--space-sx);
+    border-radius: var(--radius-sx);
+    font-weight: bold;
+    color: var(--color-white);
+    display: none;
+    background-color: var(--bg-sext);
 }
 
 .navigation_list {
@@ -57,14 +68,16 @@
     .main-navigation {
         width: 80%;
         height: 100%;
+        transition: 0.5s ease;
         transform: translateX(-100%);
+        background-color: var(--bg-menu-mobile);
     }
 
     .main-navigation.active {
         transform: translateX(0);
     }
 
-    .menu-button {
+    .menu-button, .btn-close {
         display: block;
     }
 

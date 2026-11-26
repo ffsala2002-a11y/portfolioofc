@@ -5,6 +5,9 @@ import { toggleMenu, closeMenu } from './modules/mobileMenu.js';
 const input = document.getElementById('inputName');
 const textArea = document.getElementById('textMessage');
 const form = document.getElementById('formZap');
+const btnClose = document.getElementById('btnClose');
+const menuButton = document.querySelector('.menu-button');
+const bgNavigation = document.getElementById('navigationBackground');
 
 form.addEventListener('submit', (e) => {
     e.preventDefault();
@@ -22,8 +25,7 @@ form.addEventListener('submit', (e) => {
 });
 
 
-const menuButton = document.querySelector('.menu-button');
-const bgNavigation = document.getElementById('navigationBackground');
 
 menuButton.addEventListener('click', toggleMenu);
 bgNavigation.addEventListener('click', closeMenu);
+btnClose.addEventListener('click', closeMenu);
