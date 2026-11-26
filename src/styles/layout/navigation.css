@@ -47,8 +47,16 @@
     color: var(--color-white);
 }
 
-.navigation_link:hover::after {
-    width: 100%;
+.btn-primary {
+    background-color: #222;
+    color: #fff;
+    transition: 0.3s ease;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .navigation_link:hover::after {
+        width: 100%;
+    }
 }
 
 .navigation_link::after {
@@ -103,5 +111,11 @@
     .navigation_list {
         flex-direction: column;
         align-items: flex-start;
+    }
+
+    .navigation_link {
+        display: flex;
+        height: 100%;
+        gap: var(--space-md);
     }
 }
