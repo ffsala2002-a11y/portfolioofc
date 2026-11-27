@@ -4,7 +4,8 @@
     bottom: var(--space-lg);
     border-radius: var(--radius-sx);
     padding: var(--space-md);
-    background-color: var(--bg-quint);
+    border: solid 1px red;
+    background-color: rgb(43, 1, 1);
 }
 
 .modalAlert.active {

@@ -27,7 +27,7 @@
     position: absolute;
     top: var(--space-md);
     right: var(--space-md);
-    padding: var(--space-sx);
+    padding: var(--space-sx) var(--space-md);
     border-radius: var(--radius-sx);
     font-weight: bold;
     color: var(--color-white);
@@ -71,6 +71,7 @@
 
 
 @media (max-width: 768px) {
+
     .main-navigation {
         width: 80%;
         height: 100%;
