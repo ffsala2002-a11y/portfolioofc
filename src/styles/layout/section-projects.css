@@ -21,9 +21,11 @@
 .project_card {
     overflow: hidden;
     width: 100%;
+    height: 100%;
     border: solid 2px;
     display: flex;
     flex-direction: column;
+    gap: 0;
     cursor: pointer;
     border-radius: var(--radius-sm);
 }
@@ -33,9 +35,13 @@
     transition: all 0.5s ease-in-out;
 }
 
+.card-box_img {
+    width: 100%;
+    height: 60%;
+}
+
 .card_image {
     width: 100%;
-    height: 65%;
     object-fit: cover;
 }
 
@@ -45,6 +51,7 @@
 }
 
 .card_content {
+    height: 100%;
     background-color: var(--bg-quart);
     backdrop-filter: blur(10px);
     padding: var(--space-md);
