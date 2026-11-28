@@ -1,153 +1,20 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#000">
-    <link rel="stylesheet" href="./src/styles/app.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
-        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer">
-    <title>Portfólio | Diego Silva</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#000">
+  <link rel="stylesheet" href="./src/styles/app.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+    integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+  <title>Portfólio | Diego Silva</title>
 </head>
 
 <body>
-
-    <nav class="main-navigation">
-        <ul class="navigation_list">
-            <li class="navigation_item">
-                <a href="#inicio" class="navigation_link">
-                    <i class="fa-solid fa-house"></i>
-                    Início
-                </a>
-            </li>
-
-            <li class="navigation_item">
-                <a href="#sobre" class="navigation_link">
-                    <i class="fa-solid fa-info"></i>
-                    Sobre
-                </a>
-            </li>
-
-            <li class="navigation_item">
-                <a href="#projetos" class="navigation_link">
-                    <i class="fa-solid fa-gear"></i>
-                    Projetos
-                </a>
-            </li>
-
-            <li class="navigation_item">
-                <a href="#contato" class="navigation_link">
-                    <i class="fa-solid fa-phone-flip"></i>
-                    Contato
-                </a>
-            </li>
-        </ul>
-
-        <button id="btnClose" class="btn-close">X</button>
-    </nav>
-
-    <button id="menuButton" class="menu-button">
-        <i class="fa-solid fa-bars"></i>
-    </button>
-
-    <div id="navigationBackground" class="navigationBackground"></div>
-
-    <main id="inicio" class="main">
-        <img class="main_img-avatar" src="./src/img/Diego.png" alt="Foto de perfil de Diego Silva">
-        <h1 class="main_title">
-            Diego Silva
-        </h1>
-        <p class="main_sub-title">
-            Desenvolvedor Front-End
-        </p>
-    </main>
-
-    <section id="sobre" class="sobre">
-        <h2 class="sobre_title">Sobre mim</h2>
-
-        <div class="sobre_content">
-            <p class="sobre_description">
-                Tenho conhecimentos em desenvolvimento Front-End, com foco em HTML, CSS e JavaScript. Tenho
-                experiência
-                na criação de interfaces responsivas, organização de código, estilização de componentes e
-                desenvolvimento de funcionalidades interativas, sempre buscando boas práticas, usabilidade e código
-                limpo.
-            </p>
-        </div>
-    </section>
-
-    <section id="projetos" class="project">
-        <h2 class="project_title">Meus projetos</h2>
-
-        <div class="project_list">
-
-            <div class="project_card">
-                <div class="card-box_img">
-                    <img class="card_image" src="./src/img/projeto_01.png" alt="Foto projeto 01 ">
-                </div>
-                <div class="card_content">
-                    <h3 class="card_title">Sistema de Alterações de Preços</h3>
-                    <p class="card_description">
-                        Sistema open source desenvolvido para automatizar a comparação de tabelas de preços,
-                        identificando aumentos, reduções, novos produtos e alterações de estoque. Permite importar
-                        arquivos, pesquisar produtos por NCE ou nome e gerar relatórios em PDF, tornando a conferência
-                        de preços mais rápida e eficiente.
-
-                        Tecnologias e arquitetura: desenvolvido com HTML5, CSS3 e JavaScript puro (Vanilla JS), sem
-                        dependência de frameworks. Utiliza JavaScript Modules (ES Modules) para modularização e
-                        separação de responsabilidades, além de uma arquitetura CSS organizada em arquivos específicos,
-                        facilitando a manutenção, reutilização e escalabilidade do código.
-                    </p>
-                </div>
-            </div>
-
-            <div class="project_card">
-                <div class="card-box_img">
-                    <img class="card_image" src="./src/img/projeto_02.png" alt="Foto projeto 02">
-                </div>
-                <div class="card_content">
-                    <h3 class="card_title">Sistema de Gestão de Estoque</h3>
-                    <p class="card_description">
-                        Sistema web desenvolvido para facilitar o gerenciamento de estoque de oficinas de motos. Permite
-                        cadastrar produtos, controlar entradas e saídas de peças, acompanhar movimentações e identificar
-                        automaticamente itens com estoque baixo. Possui autenticação de usuários, painel administrativo
-                        com indicadores e interface responsiva para computadores e dispositivos móveis.
-
-                        Tecnologias utilizadas: HTML5, CSS3, JavaScript puro (Vanilla JavaScript), Supabase (Backend as
-                        a Service), PostgreSQL e SQL.
-                    </p>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <section id="contato" class="section-contact">
-        <h2 class="contact_title">Entre em contato</h2>
-        <form id="formZap" class="contact">
-
-            <div class="contact_group">
-                <input id="inputName" class="contact_input" type="text" placeholder="Seu nome">
-            </div>
-
-            <div class="contact_group">
-                <textarea id="textMessage" class="contact_textarea" placeholder="Sua mensagem"></textarea>
-            </div>
-
-            <button class="contact_button" type="submit">
-                Enviar mensagem
-            </button>
-
-        </form>
-
-        <div id="modalAlert" class="modalAlert">
-            <h4 id="message" class="modalAlert_message">Esse é meu Modal Alert Warning</h4>
-        </div>
-    </section>
-
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
 </body>
-<script type="module" src="./src/js/app.js"></script>
 
 </html>

@@ -1,0 +1,89 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+
+    --bg-prima: #000000;
+    --bg-secun: rgba(32, 31, 31, 0.878);
+    --bg-terc: #35e4f1;
+    --bg-quart: #35e4f12f;
+    --bg-quint: #0f0f0f;
+    --bg-sext: rgba(135, 136, 136, 0.836);
+
+    --bg-menu-mobile: rgba(22, 22, 22, 0.959);
+
+    --color-white: #ffff;
+    --color-black: #000;
+
+    --space-sx: 0.5rem;
+    --space-md: 1rem;
+    --space-lg: 2rem;
+
+    --size-sm: 1.7rem;
+
+    --radius-circle: 50%;
+    --radius-sx: 10px;
+    --radius-sm: 20px;
+
+    --border: solid 2px #35e4f1;
+    --padding: 6rem 2rem;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    overflow-y: auto;
+    position: relative;
+    background-color: var(--bg-prima);
+}
+
+body.scroll-hidden {
+    overflow-y: hidden;
+}
+
+body::-webkit-scrollbar {
+    width: 8px;
+    background-color: rgba(241, 241, 241, 0.144);
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: var(--radius-circle);
+    background-color: var(--bg-quart);
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    cursor: pointer;
+    background-color: var(--bg-terc);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+input,
+textarea {
+    border: none;
+}
+
+textarea {
+    resize: none;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+}
